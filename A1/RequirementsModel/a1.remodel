@@ -1,0 +1,30 @@
+UseCaseModel A1 {
+
+	Service A1System {
+
+	}
+
+	Service ThirdPartyServices {
+
+	}
+
+}
+
+DomainModel A1 {
+
+	Entity Person {
+		Name : Integer
+		Gender : Gender[MALE|FEMALE]
+		Civstat : CivilStatus[SINGLE|MARRIED|DIVORCED|WINDOWED]
+
+		[Refer]
+		Husband : Person Association
+		Wife : Person Association
+		[INV]
+		inv PersonNameUnique : Person.allInstance()->isUnique(p:Person | p.Name)
+		inv Inv2 : if Gender = Gender::MALE then Husband.isEmpty() endif
+		inv Inv3 : if Gender = Gender::FEMALE then Wife.isEmpty() endif
+	}
+
+}
+

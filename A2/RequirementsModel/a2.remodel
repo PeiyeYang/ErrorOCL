@@ -1,0 +1,43 @@
+UseCaseModel A2 {
+
+	Service A2System {
+
+	}
+
+	Service ThirdPartyServices {
+
+	}
+
+}
+
+DomainModel A2 {
+
+	Entity Paper {
+		WordCount : Integer
+		StudentPaper : Boolean
+
+		[Refer]
+		Author : Researcher* Association
+		Referee : Researcher* Association
+		[INV]
+		inv Inv4: WordCount < 1000
+		inv Inv5: StudentPaper = Author->exists(r:Researcher|r.IsStudent)
+		inv Inv5: StudentPaper = Author->forAll(r:Researcher|not r.IsStudent)
+		inv Inv6: Referee->forAll(r:Researcher|r.IsStudent = false)
+		inv Inv7: Paper.allInstance()->exists(paper:Paper|paper.StudentPaper)
+	}
+
+	Entity Researcher {
+		IsStudent : Boolean
+
+		[Refer]
+		Manuscript : Paper ! Association
+		Submission : Paper ! Association
+		[INV]
+		inv Inv1: Manuscript.size()=1
+		inv Inv2: Submission.size()>=2
+		inv Inv3: Submission<>Manuscript
+	}
+
+}
+

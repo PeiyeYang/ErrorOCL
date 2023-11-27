@@ -1,0 +1,2 @@
+|lines: 37 inv:Inv2|
+|Researcher must have an instance|

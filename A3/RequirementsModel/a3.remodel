@@ -1,0 +1,30 @@
+UseCaseModel A3 {
+
+	Service A3System {
+
+	}
+
+	Service ThirdPartyServices {
+
+	}
+
+}
+
+DomainModel A3 {
+
+	Entity A {
+	}
+
+	Entity B extends A {
+		[INV]
+		inv Inv1: B.allInstance()->forAll(b:B|C.allInstance()->forAll(c:C|b<>c))
+	}
+
+	Entity C extends A {
+	}
+
+	Entity D extends B {
+	}
+
+}
+
