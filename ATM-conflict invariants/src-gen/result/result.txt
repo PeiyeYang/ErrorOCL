@@ -1,0 +1,6 @@
+Error type:Conflict invariants
+Error location:
+|inv: NameSizeLimit1 lines: 767|
+|inv: NameSizeLimit2 lines: 768|
+|User must have an instance|
+time: 15ms

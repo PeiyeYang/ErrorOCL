@@ -1,0 +1,5 @@
+Error type:Redundant invariants
+Error location:
+|inv: NameConstraint1 lines: 767|
+|inv: NameCOnstarint2 lines: 768|
+time: 114ms

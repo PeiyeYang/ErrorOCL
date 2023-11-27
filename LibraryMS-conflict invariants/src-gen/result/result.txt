@@ -1,0 +1,7 @@
+Error type:Conflict invariants
+Error location:
+|inv: DescriptionConstraint1 lines: 2039|
+|inv: DescriptionConstraint2 lines: 2111|
+|RecommendBook extends Book|
+|RecommendBook must have an instance|
+time: 37ms

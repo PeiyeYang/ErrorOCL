@@ -1,0 +1,6 @@
+Error type:Conflict invariants
+Error location:
+|inv: PriceGreatThanEqualZero lines: 1727|
+|inv: ExistsLowPrice lines: 1729|
+|Item must have an instance|
+time: 41ms

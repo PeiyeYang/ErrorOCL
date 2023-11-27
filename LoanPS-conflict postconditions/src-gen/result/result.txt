@@ -1,0 +1,7 @@
+enterLoanInformation
+Error type:Conflict postconditions
+Error location:
+|inv: SecurityNumberConstriant lines: 1258|
+|loa violates constraints|
+|lines: 275|
+time: 68ms

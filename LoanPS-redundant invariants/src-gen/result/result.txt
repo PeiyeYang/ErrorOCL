@@ -1,0 +1,5 @@
+Error type:Redundant invariants
+Error location:
+|inv: BalanceGreatAndEqualZero lines: 1306|
+|inv: BalanceGreatAndEqual1000 lines: 1307|
+time: 1142ms

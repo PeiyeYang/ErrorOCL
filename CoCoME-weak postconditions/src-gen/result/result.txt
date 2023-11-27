@@ -1,0 +1,2 @@
+Model Check Sat
+time: 3570ms

@@ -1,0 +1,7 @@
+approveLoanRequest
+Error type:Conflict preconditions
+Error location:
+|inv: CreditScoreGreatAndEqualZero lines: 1258|
+|lines: 243|
+|lines: 244|
+time: 973ms

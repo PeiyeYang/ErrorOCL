@@ -1,0 +1,4 @@
+Error type: Redundant precondition 
+Error location: 
+lines: 222
+time: 11927ms

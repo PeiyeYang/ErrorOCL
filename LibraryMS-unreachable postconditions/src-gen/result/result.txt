@@ -1,0 +1,5 @@
+payOverDueFee
+Error type:Unreachable postconditions
+Error location:
+|user violates constraints|
+time: 92ms

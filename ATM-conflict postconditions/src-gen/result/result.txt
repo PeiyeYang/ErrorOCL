@@ -1,0 +1,7 @@
+createBankCard
+Error type:Conflict postconditions
+Error location:
+|inv: BalanceGreatAndEqualZero lines: 754|
+|ban violates constraints|
+|lines: 495|
+time: 179ms

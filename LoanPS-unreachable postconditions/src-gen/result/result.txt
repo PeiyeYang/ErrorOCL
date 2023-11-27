@@ -1,0 +1,5 @@
+loanPayment
+Error type:Unreachable postconditions
+Error location:
+|loan violates constraints|
+time: 111ms

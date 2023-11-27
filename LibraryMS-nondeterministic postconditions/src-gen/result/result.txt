@@ -1,0 +1,6 @@
+Consistency:unsat
+core: 
+|inv: PasswordSizeMoreThan10 lines: 2001|
+|inv: PasswordSizeLessThan10 lines: 2002|
+|User must have an instance|
+time: 58ms

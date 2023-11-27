@@ -1,0 +1,3 @@
+|lines: 2001 inv:PasswordSizeMoreThan10|
+|lines: 2002 inv:PasswordSizeLessThan10|
+|User must have an instance|
