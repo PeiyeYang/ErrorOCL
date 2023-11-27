@@ -1,8 +1,0 @@
-makeReservation
-Error type:Conflict preconditions
-Error location:
-|inv: OverDueFeeGreatThanEqualZero lines: 1999|
-|lines: 186 ~ 186 (index:1)|
-|lines: 197|
-|lines: 198|
-time: 36ms

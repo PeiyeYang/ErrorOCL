@@ -1,8 +1,0 @@
-deleteBankCard
-Error type:Conflict preconditions
-Error location:
-|inv: BalanceGreatAndEqualZero lines: 755|
-|lines: 576 ~ 576 (index:1)|
-|lines: 584|
-|lines: 585|
-time: 374ms

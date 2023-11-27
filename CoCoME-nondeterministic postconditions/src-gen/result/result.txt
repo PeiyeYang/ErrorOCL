@@ -1,5 +1,0 @@
-randomDelivery
-Error type: Non-deterministic postconditions
-Error location: 
-item1 not determined
-time: 929ms

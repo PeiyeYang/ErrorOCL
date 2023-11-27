@@ -1,5 +1,0 @@
-modifyLoanRequest
-Error type: Non-deterministic postconditions
-Error location: 
-loanrequest not determined
-time: 330ms

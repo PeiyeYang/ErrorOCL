@@ -1,5 +1,0 @@
-withdrawCash
-Error type:Unreachable postconditions
-Error location:
-|withdrawCash: InputCard@pre strong executability|
-time: 192ms

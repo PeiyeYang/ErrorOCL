@@ -1,5 +1,0 @@
-changeCard
-Error type: Weak postconditions
-Error location: 
-bc and invarint:BalanceGreatAndEqualZero
-time: 44ms

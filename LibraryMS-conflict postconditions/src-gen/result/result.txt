@@ -1,5 +1,0 @@
-Error type:Redundant invariants
-Error location:
-|inv: PasswordSizeLessThan10 lines: 2002|
-|inv: PasswordSizeConstraint2 lines: 2003|
-time: 8378ms

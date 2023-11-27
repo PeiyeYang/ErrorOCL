@@ -1,5 +1,0 @@
-changeCard
-Error type: Non-deterministic postconditions
-Error location: 
-bc not determined
-time: 52ms

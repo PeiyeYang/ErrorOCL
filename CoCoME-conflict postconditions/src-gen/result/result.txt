@@ -1,9 +1,0 @@
-discountItem
-Error type:Conflict postconditions
-Error location:
-|inv: PriceGreatThanEqualZero lines: 1740|
-|lines: 241|
-|lines: 242|
-|item violates constraints|
-|lines: 244|
-time: 52ms

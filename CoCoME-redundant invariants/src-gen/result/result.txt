@@ -1,5 +1,0 @@
-Error type:Redundant invariants
-Error location:
-|inv: StockNumberGreatThanEqualZero lines: 1727|
-|inv: SufficientQuantity lines: 1728|
-time: 8927ms

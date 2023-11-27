@@ -1,6 +1,0 @@
-Error type:Conflict invariants
-Error location:
-|inv: CreditScoreGreatAndEqualZero lines: 1257|
-|inv: ExistCreditScoreLessThanZero lines: 1258|
-|LoanRequest must have an instance|
-time: 56ms

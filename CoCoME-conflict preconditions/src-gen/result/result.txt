@@ -1,8 +1,0 @@
-addStock
-Error type:Conflict preconditions
-Error location:
-|inv: StockNumberGreatThanEqualZero lines: 1741|
-|lines: 237 ~ 237 (index:1)|
-|lines: 240|
-|lines: 241|
-time: 37ms
