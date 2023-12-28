@@ -1,0 +1,65 @@
+UseCaseModel A4 {
+
+	Service A4System {
+
+	}
+
+	Service ThirdPartyServices {
+
+	}
+
+}
+
+DomainModel A4 {
+
+	Entity University {
+		[Refer]
+		OwnedStudent: Department* Association
+	}
+
+	Entity Department {
+		[Refer]
+		OwnedStudent: Student* Association
+		BelongDepartment:University! Association
+	}
+
+	Entity Module {
+		Code:			Integer
+		Credit:			Integer
+		Year: 			Integer
+		Description:	Integer
+
+		[Refer]
+		Students: Student! Association
+		[INV]
+		inv Inv8:Year>=1 and Year<=5 // error location
+	}
+
+	Entity Person {
+		Age:	Integer
+		Mature:	Boolean
+		Name:	String
+		[INV]
+		inv Inv1: Age>0 and Age<18
+	}
+
+	Entity Student extends Person {
+		Id:		Integer
+		Year:	Integer
+
+		[Refer]
+		StudyModules: Module* Association
+		BelongedDepartment: Department! Association
+		[INV]
+		inv Inv3: Year>=1 and Year<=6
+		inv Inv4: Student.allInstance()->isUnique(s:Student|s.Id)
+		inv Inv5: StudyModules->forAll(m:Module|m.Year=Year)
+		inv Inv6: Student.allInstance()->exists(s:Student|s.Year=6)
+		inv Inv7: not StudyModules.isEmpty()
+	}
+
+	Entity Child extends Person {
+	}
+
+}
+
