@@ -172,19 +172,6 @@ UseCaseModel LibraryManagementSystem {
 
 	}
 
-	Contract LibraryManagementSystemSystem::changeOverDueFee(uid:String) : Boolean {
-
-		definition:
-			user:User = User.allInstance()->any(u:User | u.UserID = uid)
-
-		precondition:
-			user.oclIsUndefined() = false
-
-		postcondition:
-			user.OverDueFee <= 0 and
-			result = true
-	}
-
 	/* -------------------- Contracts ----------------------*/
 	/* Search book */
 	Contract SearchBook::searchBookByBarCode(barcode:String): Set(Book) {
@@ -380,6 +367,19 @@ UseCaseModel LibraryManagementSystem {
 			res.IsReserveClosed = true and
 			result = true
 
+	}
+
+	Contract LibraryManagementSystemSystem::changeOverDueFee(uid:String) : Boolean {
+
+		definition:
+			user:User = User.allInstance()->any(u:User | u.UserID = uid)
+
+		precondition:
+			user.oclIsUndefined() = false
+
+		postcondition:
+			user.OverDueFee <= 0 and
+			result = true
 	}
 
 	Contract LibraryManagementSystemSystem::borrowBook(uid:String, barcode:String) : Boolean {
